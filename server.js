@@ -50,7 +50,7 @@ app.post('/api/clear', function(req, res) {
 app.post('/api/new', function(req, res) {
 	console.log('Works');
 	var newCustomer = req.body;
-	if (customers.length >= 5) {
+	if (customers.length >= 100) {
 		waitlist.push(newCustomer);
 	} else {
 		customers.push(newCustomer);

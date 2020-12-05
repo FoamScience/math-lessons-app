@@ -5,6 +5,7 @@
   "main": "server.js",
   "dependencies": {
     "body-parser": "^1.18.1",
+    "day_schedule_selector": "^0.1.0",
     "express": "^4.15.4"
   },
   "devDependencies": {},
