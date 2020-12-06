@@ -1,6 +1,8 @@
 var express = require("express");
+var process = require("process");
 var bodyParser = require("body-parser");
 var path = require("path");
+const { Pool, Client } = require("pg");
 
 // Sets up the Express App
 // =============================================================
@@ -50,12 +52,37 @@ app.post('/api/clear', function(req, res) {
 app.post('/api/new', function(req, res) {
 	console.log('Works');
 	var newCustomer = req.body;
+    var connectionString = process.env.DATABASE_URL;
+
+    const pool = new Pool({
+        connectionString,
+    });
+    var queryString = `INSERT INTO student( name, phonenumber, email, timeslots) VALUES ('`+
+        newCustomer.customerName + `', '` + newCustomer.phoneNumber + `', '` +
+        newCustomer.customerEmail + `', '` + newCustomer.timeSlots + `')`;
+    console.log(queryString);
+
+    pool.query(queryString, (err, res) => {
+        if (err !== undefined) {
+            // log the error to console
+            console.log("Postgres INSERT error:", err);
+
+            // get the keys for the error
+            var keys = Object.keys(err);
+            console.log("\nkeys for Postgres error:", keys);
+
+            // get the error position of SQL string
+            console.log("Postgres error position:", err.position);
+        }
+    });
+    
 	if (customers.length >= 100) {
 		waitlist.push(newCustomer);
 	} else {
 		customers.push(newCustomer);
 	}
 	res.json(newCustomer);
+
 });
 
 app.listen(port, function() {
