@@ -61,3 +61,5 @@ app.post('/api/new', function(req, res) {
 app.listen(port, function() {
   console.log("App listening on PORT " + port);
 });
+
+app.use('/public', express.static(path.join(__dirname, "public")));
