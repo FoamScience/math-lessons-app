@@ -60,7 +60,8 @@ app.post('/api/new', function(req, res) {
     });
     var queryString = `INSERT INTO student( name, phonenumber, email, timeslots) VALUES ('`+
         newCustomer.customerName + `', '` + newCustomer.phoneNumber + `', '` +
-        newCustomer.customerEmail + `', '` + newCustomer.timeSlots + `')`;
+        newCustomer.customerEmail + `', '` + newCustomer.level + `', '` +
+        newCustomer.timeSlots + `')`;
     console.log(queryString);
 
     pool.query(queryString, (err, res) => {
