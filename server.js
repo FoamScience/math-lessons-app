@@ -54,6 +54,7 @@ app.post('/api/new', function(req, res) {
 	var newCustomer = req.body;
     var connectionString = process.env.DATABASE_URL;
 
+    // Send newCustomer data to databse
     const pool = new Pool({
         connectionString,
     });
@@ -76,13 +77,15 @@ app.post('/api/new', function(req, res) {
         }
     });
     
-	if (customers.length >= 100) {
-		waitlist.push(newCustomer);
-	} else {
-		customers.push(newCustomer);
-	}
+	//if (customers.length >= 100) {
+	//	waitlist.push(newCustomer);
+	//} else {
+	//	customers.push(newCustomer);
+	//}
 	res.json(newCustomer);
 
+    // Redirect to registered page
+    window.location.href = 'registered.html';
 });
 
 app.listen(port, function() {
