@@ -62,7 +62,7 @@ app.post('/api/new', function(req, res) {
     const pool = new Pool({
         connectionString,
     });
-    var queryString = `INSERT INTO student( name, phonenumber, email, timeslots) VALUES ('`+
+    var queryString = `INSERT INTO student( name, phonenumber, email, level, timeslots) VALUES ('`+
         newCustomer.customerName + `', '` + newCustomer.phoneNumber + `', '` +
         newCustomer.customerEmail + `', '` + newCustomer.level + `', '` +
         newCustomer.timeSlots + `')`;
