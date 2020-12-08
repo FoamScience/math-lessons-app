@@ -77,16 +77,13 @@ app.post('/api/new', function(req, res) {
             console.log("Postgres error position:", err.position);
         }
     });
-    
-	//if (customers.length >= 100) {
-	//	waitlist.push(newCustomer);
-	//} else {
-	//	customers.push(newCustomer);
-	//}
+	if (customers.length >= 100) {
+		waitlist.push(newCustomer);
+	} else {
+		customers.push(newCustomer);
+	}
 	res.json(newCustomer);
 
-    // Redirect to registered page
-    window.location.href = 'registered.html';
 });
 
 app.listen(port, function() {
