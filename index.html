@@ -208,20 +208,19 @@
 		// Here we get the location of the root page.
 		// We use this instead of explicitly saying the URL is localhost:3001 because the url will change when we deploy.
 		var currentURL = window.location.href;
-        console.log(currentURL)
 
-	    $.post(currentURL + "/api/new", newReservation,
+	    $.post(currentURL + "api/new", newReservation,
 	    function(data){
 
-	    	// If a table is available... tell user they are booked.
-	    	if(data == true){
-	    		alert("Yay! You are officially booked!")
-	    	}
+	    	//// If a table is available... tell user they are booked.
+	    	//if(data == true){
+	    	//	alert("Yay! You are officially booked!")
+	    	//}
 
-	    	// If a table is available... tell user they on the waiting list.
-	    	if(data == false){
-	    		alert("Sorry you are on the wait list")
-	    	}
+	    	//// If a table is available... tell user they on the waiting list.
+	    	//if(data == false){
+	    	//	alert("Sorry you are on the wait list")
+	    	//}
 
             // Redirect to registered page
             window.location.href = "/registered";
