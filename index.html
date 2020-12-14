@@ -211,25 +211,8 @@
 
 	    $.post(currentURL + "api/new", newReservation,
 	    function(data){
-
-	    	//// If a table is available... tell user they are booked.
-	    	//if(data == true){
-	    	//	alert("Yay! You are officially booked!")
-	    	//}
-
-	    	//// If a table is available... tell user they on the waiting list.
-	    	//if(data == false){
-	    	//	alert("Sorry you are on the wait list")
-	    	//}
-
             // Redirect to registered page
             window.location.href = "/registered";
-	    	// Clear the form when submitting
-    		//$('#reserve_name').val("");
-			//$('#reserve_phone').val("");
-			//$('#reserve_email').val("");
-			//$('#reserve_uniqueID').val("");
-
 	    });
 
 return false;
