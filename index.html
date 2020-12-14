@@ -1,288 +1,182 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+<!--
+	Ethereal by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html lang="ar">
-<head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-56E9ZZ99WZ"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'G-56E9ZZ99WZ');
-    </script>
+	<head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-56E9ZZ99WZ"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        
+          gtag('config', 'G-56E9ZZ99WZ');
+        </script>
 	
 	<meta charset="utf-8">
-	<title>Elwardi's Math lessons</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="">
-	<meta name="author" content="">
-	
-	<link rel="shortcut icon" href="public/images/favicon.ico">
-    
-	<!-- CSS -->
-	<link href="public/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-	<link href="public/css/flexslider.css" rel="stylesheet" type="text/css" />
-	<link href="public/css/prettyPhoto.css" rel="stylesheet" type="text/css" />
-	<link href="public/css/animate.css" rel="stylesheet" type="text/css" media="all" />
-    <link href="public/css/owl.carousel.css" rel="stylesheet">
-	<link href="public/css/style.css" rel="stylesheet" type="text/css" />
-    
-	<!-- FONTS -->
-	<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500italic,700,500,700italic,900,900italic' rel='stylesheet' type='text/css'>
-	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">	
-    
-	<!-- SCRIPTS -->
-	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-    <!--[if IE]><html class="ie" lang="en"> <![endif]-->
-	
-	<script src="public/js/jquery.min.js" type="text/javascript"></script>
-	<script src="public/js/bootstrap.min.js" type="text/javascript"></script>
-	<script src="public/js/jquery.prettyPhoto.js" type="text/javascript"></script>
-	<script src="public/js/jquery.nicescroll.min.js" type="text/javascript"></script>
-	<script src="public/js/superfish.min.js" type="text/javascript"></script>
-	<script src="public/js/jquery.flexslider-min.js" type="text/javascript"></script>
-	<script src="public/js/owl.carousel.js" type="text/javascript"></script>
-	<script src="public/js/animate.js" type="text/javascript"></script>
-	<script src="public/js/jquery.BlackAndWhite.js"></script>
-	<script src="public/js/myscript.js" type="text/javascript"></script>
-	<script>
-		
-		//PrettyPhoto
-		jQuery(document).ready(function() {
-			$("a[rel^='prettyPhoto']").prettyPhoto();
-		});
-		
-		//BlackAndWhite
-		$(window).load(function(){
-			$('.client_img').BlackAndWhite({
-				hoverEffect : true, // default true
-				// set the path to BnWWorker.js for a superfast implementation
-				webworkerPath : false,
-				// for the images with a fluid width and height 
-				responsive:true,
-				// to invert the hover effect
-				invertHoverEffect: false,
-				// this option works only on the modern browsers ( on IE lower than 9 it remains always 1)
-				intensity:1,
-				speed: { //this property could also be just speed: value for both fadeIn and fadeOut
-					fadeIn: 300, // 200ms for fadeIn animations
-					fadeOut: 300 // 800ms for fadeOut animations
-				},
-				onImageReady:function(img) {
-					// this callback gets executed anytime an image is converted
-				}
-			});
-		});
-		
-	</script>
-	
-</head>
-<body>
+		<title>Elwardi's Math Lessons</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="public/assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="public/assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
 
-<!-- PRELOADER -->
-<img id="preloader" src="public/images/preloader.gif" alt="" />
-<!-- //PRELOADER -->
-<div class="preloader_hide">
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
 
-	<!-- PAGE -->
-	<div id="page">
-	
-		<!-- HEADER -->
-		<header>
-			
-			<!-- MENU BLOCK -->
-			<div class="menu_block">
-			
-				<!-- CONTAINER -->
-				<div class="container clearfix">
-					
-					<!-- LOGO -->
-					<div class="logo pull-left">
-						<a href="index.html" ><span class="b1">M</span><span class="b2">A</span>
-                            <span class="b3">T</span><span class="b4">H</span></a>
-					</div><!-- //LOGO -->
+				<!-- Wrapper -->
+					<div id="wrapper">
 
-					<!-- MENU -->
-					<div class="pull-right">
-						<nav class="navmenu center">
-							<ul>
-								<li class="first active scroll_btn"><a href="#home" >الصفحة الرئيسية</a></li>
-								<li class="scroll_btn last"><a href="#team" >الموقع</a></li>
-								<li class="scroll_btn"><a href="#about" >التسجيل (12/2020)</a></li>
-							</ul>
-						</nav>
-					</div><!-- //MENU -->
-				</div><!-- //MENU BLOCK -->
-			</div><!-- //CONTAINER -->
-		</header><!-- //HEADER -->
-		
-		
-		<!-- HOME -->
-		<section id="home" class="padbot0">
-				
-			<!-- TOP SLIDER -->
-			<div class="flexslider top_slider">
-				<ul class="slides">
-					<li class="slide1">
-						<div class="flex_caption1">
-							<p class="title3 captionDelay6 FromTop">الوردي</p>
-							<p class="title2 captionDelay4 FromTop">محمد</p>
-							<p class="title1 captionDelay2 FromTop">فاضلي</p>
-							<p class="title4 captionDelay7 FromBottom">
-                                2012/2013 فائز بأولمبياد الرياضيات الوطني &#8592; <br>
-                                دروس في الرياضيات (4,3 متوسط و 2,1 ثانوي) &#8226;
-                            </p>
-						</div>
-					<li class="slide3">
-						<div class="flex_caption1">
+						<!-- Panel (Banner) -->
+							<section class="panel banner right">
+								<div class="content color0 span-3-75 align-right">
+									<h1 class="major">فاضلي محمد<br /> الوردي</h1>
+									<p>دروس خصوصية في الرياضيات (4,3 متوسط و 2,1 ثانوي)</p>
+									<ul class="actions">
+										<li><a href="#first" class="button primary color1 circle icon solid fa-angle-right">Next</a></li>
+									</ul>
+								</div>
+								<div class="image filtered span-1-75" data-position="25% 25%">
+									<img src="public/images/pic01.jpg" alt="" />
+								</div>
+							</section>
 
-							<p class="title4 captionDelay7 FromLeft">
-                            ماستر في هندسة الإنتاج البترولي &#8592; <br>
-                            حاز عدة مرات  على <b>أفضل وأبسط</b> حل 
-                            <a href="https://www.math.purdue.edu/pow/spring2015/pdf/solution9.pdf"> لمشكلة الرياضيات Purdue الأسبوعية من جامعة </a> &#8592;
-                            </p>
+						<!-- Panel (Spotlight) -->
+							<section class="panel spotlight medium right color1" id="first">
+								<div class="content span-7 align-right">
+                                    <p>
+                                    2012/2013 <cite dir="rtl">  &#8592; فائز بأولمبياد الرياضيات الوطني <br>
+                                    &#8592; ماستر في هندسة الإنتاج البترولي </cite><br> <br>
+                                    
+                                    <cite dir="rtl"> &#8592; حاز عدة مرات على أفضل وأبسط حل لمشكلة الرياضيات الأسبوعية من جامعة 
+                                        <span dir="ltr"> Purdue </span>
+                                    </cite>
+                                    <br> <br>
+                                    0783 138 865, 0658 189 501 <span dir="rtl"> رقم الهاتف :</span> <br>
+                                    elwardifadeli@gmail.com <span dir="rtl"> البريد الالكتروني: </span><br>
+                                    2000 DZD <span dir="rtl"> حقوق التسجيل : </span>
+                                    </p>
+								</div>
+								<div class="image filtered tinted" data-position="top left">
+									<img src="public/images/pic02.jpg" alt="" />
+                                </div>
+							</section>
 
-                            <p class="title5 captionDelay7 FromBottom text-center">
-                            0783 138 865, 0658 189 501 <b>: رقم الهاتف<b/><br>
-                            elwardifadeli@gmail.com <b>: البريد الالكتروني</b> <br>
-                            2000 DZD <b>: حقوق التسجيل</b> 
-                            </p>
-						</div>
-					</li>
-				</ul>
+						<!-- Panel -->
+							<section class="panel color1">
+								<div class="intro joined">
+									<h2 class="major">الموقع</h2>
+									<p>بالقرب من مسجد الفلاح ، خنشلة</p>
+								</div>
+								<div class="inner">
+			                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6503.21289732851!2d7.144161182712965!3d35.415004336489076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd84eebd9acd41e94!2zRGFyIEVsIEFya2FtINiv2KfYsSDYp9mE2KPYsdmC2YU!5e0!3m2!1sen!2sdz!4v1607100335423!5m2!1sen!2sdz" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+								</div>
+							</section>
+
+						<!-- Panel -->
+							<section class="panel color2-alt">
+								<div class="inner columns aligned joined">
+									<div class="span-6-5 align-right">
+                                        <!--<h3 class="major">التسجيل</h3>-->
+                                        <form role="form"> 
+											<div class="fields">
+												<div class="field quarter">
+													<label for="demo-name">الاسم</label>
+													<input class="align-right" type="text" name="demo-name" id="reserve_name" value="" placeholder="..." />
+												</div>
+												<div class="field quarter">
+													<label for="demo-email">البريد الإلكتروني</label>
+													<input type="email" name="demo-email" id="reserve_email" value="" placeholder="foulan@example.com" />
+												</div>
+												<div class="field quarter">
+													<label for="demo-category">المستوى</label>
+													<div class="select-wrapper">
+														<select name="demo-category" id="reserve_level">
+															<option value="">-</option>
+															<option value="1" dir="rtl">1 متوسط</option>
+															<option value="2" dir="rtl">2 متوسط</option>
+															<option value="3" dir="rtl">3 ثانوي</option>
+															<option value="4" dir="rtl">4 ثانوي</option>
+														</select>
+													</div>
+												</div>
+												<div class="field quarter">
+													<label for="demo-phone">رقم هاتف الولي</label>
+													<input type="text" name="demo-phone" id="reserve_phone" value="" placeholder="0..." />
+												</div>
+												<div class="field">
+													<label for="demo-message">اختر الفترات الزمنية المتاحة لديك (ابيض: غير متاح)</label>
+                                                    <div id="input" data-name="name"></div>
+                                                    <input type="hidden" id="result"></pre>
+												</div>
+											</div>
+											<ul class="actions">
+	        						            <button type="submit" class="primary submit conor2">تسجيل</button>
+												<li><input type="reset" value="Reset" /></li>
+											</ul>
+										</form>
+									</div>
+								</div>
+							</section>
+
+						<!-- Copyright -->
+							<div class="copyright">&copy; Elwardi. Design: <a href="https://html5up.net">HTML5 UP</a>.</div>
+
+					</div>
+
 			</div>
-			<div id="carousel">
-				<ul class="slides">
-					<li><img src="public/images/slider/old_slide.jpg" alt="" /></li>
-					<li><img src="public/images/slider/slide3_bg.jpg" alt="" /></li>
-				</ul>
-			</div><!-- //TOP SLIDER -->
-		</section><!-- //HOME -->
-		
-		<!-- TEAM -->
-		<section id="team">
-		
-		<!-- CONTAINER -->
-		<div class="container">
-			
-            <h4 class="text-center">بالقرب من مسجد الفلاح ، خنشلة</h4>
-			<div class="text-center padbot30"> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6503.21289732851!2d7.144161182712965!3d35.415004336489076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd84eebd9acd41e94!2zRGFyIEVsIEFya2FtINiv2KfYsSDYp9mE2KPYsdmC2YU!5e0!3m2!1sen!2sdz!4v1607100335423!5m2!1sen!2sdz" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> </div>
-		</div><!-- //CONTAINER -->
-		</section><!-- //TEAM -->
-		
-		<!-- ABOUT -->
-		<section id="about">
-			
-	        <div class="container padbot40">
 
-	        	<div class="row">
-	        		<div class="col-lg-12">
+		<!-- Scripts -->
+			<script src="public/assets/js/jquery.min.js"></script>
+			<script src="public/assets/js/browser.min.js"></script>
+			<script src="public/assets/js/breakpoints.min.js"></script>
+			<script src="public/assets/js/main.js"></script>
 
-	        			<!-- Reservation Page -->
-	        			<div class="panel panel-default">
-	        				<div class="panel-heading">
-	        					<h4 class="panel-title text-right">التسجيل</h4>
-	        				</div>
-	        				<div class="panel-body margbot30">
+        <script src="https://unpkg.com/timeslot-selector@latest/src/index.js"></script>
+        <script>
+            (() => {
+                const node = document.querySelector('#input')
 
-	        					<form role="form">
+                const state = {
+                    5 : [8,9],
+                    6 : [10,11,14,15,16,17],
+                }
 
-	        						<div class="form-group" class="text-right">
-	        							<label for="" class="text-right">الاسم</label>
-	        							<input type="text" class="form-control" id="reserve_name">
-	        						</div>
+                // change callback
+                function handleStateChange(newState) {
+                    console.log(newState)
+                }
 
-	        						<div class="form-group">
-	        							<label for="">رقم هاتف الولي</label>
-	        							<input type="text" class="form-control" id="reserve_phone">
-	        						</div>
+                const options = {
+                    // custom days names (it's default values)
+                    days: {
+                        0: 'الأحد',
+                        1: 'الإثنين',
+                        2: 'الثلاثاء',
+                        3: 'الأربعاء',
+                        4: 'الخميس',
+                        5: 'الجمعة',
+                        6: 'السبت',
+                    },
+                    startHour: 7,
+                    endHour: 18,
+                }
 
-	        						<div class="form-group">
-	        							<label for="">البريد الإلكتروني</label>
-	        							<input type="text" class="form-control" id="reserve_email">
-	        						</div>
+                const resultNode = document.querySelector('#result')
 
-	        						<div class="form-group">
-	        							<label for="">المستوى</label>
-	        							<input type="text" class="form-control" id="reserve_level">
-	        						</div>
+                resultNode.value = JSON.stringify(state)
 
-	        						<div class="form-group">
-	        							<label for="">اختر الفترات الزمنية المتاحة لديك (ابيض: غير متاح)</label>
-                                        <div id="input" data-name="name"></div>
-                                        <input type="hidden" class="form-control" id="result"></pre>
-	        						</div>
+                window.weekHoursPicker(node, state, handleStateChange, options, (model) => {
+                    resultNode.value = JSON.stringify(model)
+                })
+            })()
+        </script>
 
-	        						<button type="submit" class="btn btn-primary submit contact_btn">تسجيل</button>
-	        					</form>
-
-	        				</div>
-	        			</div>
-
-	        		</div>
-	        	</div>
-            </div>
-			
-		</section><!-- //ABOUT -->
-		
-		
-	</div><!-- //PAGE -->
-	
-	<!-- FOOTER -->
-	<footer>
-			
-	</footer><!-- //FOOTER -->
-	
-	
-	<!-- MAP -->
-	<div id="map">
-		<a class="map_hide" href="javascript:void(0);" ><i class="fa fa-angle-right"></i><i class="fa fa-angle-left"></i></a>
-		<iframe src="http://maps.google.com/maps?f=q&amp;give%20a%20hand=s_q&amp;hl=en&amp;geocode=&amp;q=london&amp;sll=37.0625,-95.677068&amp;sspn=42.631141,90.263672&amp;ie=UTF8&amp;hq=&amp;hnear=London,+United+Kingdom&amp;ll=51.500141,-0.126257&amp;spn=0.026448,0.039396&amp;z=14&amp;output=embed" ></iframe>
-	</div><!-- //MAP -->
-
-</div>
-
-    <script src="https://unpkg.com/timeslot-selector@latest/src/index.js"></script>
-    <script>
-        (() => {
-            const node = document.querySelector('#input')
-
-            const state = {
-                5 : [8,9],
-                6 : [10,11,14,15,16,17],
-            }
-
-            // change callback
-            function handleStateChange(newState) {
-                console.log(newState)
-            }
-
-            const options = {
-                // custom days names (it's default values)
-                days: {
-                    0: 'الأحد',
-                    1: 'الإثنين',
-                    2: 'الثلاثاء',
-                    3: 'الأربعاء',
-                    4: 'الخميس',
-                    5: 'الجمعة',
-                    6: 'السبت',
-                },
-                startHour: 7,
-                endHour: 18,
-            }
-
-            const resultNode = document.querySelector('#result')
-
-            resultNode.value = JSON.stringify(state)
-
-            window.weekHoursPicker(node, state, handleStateChange, options, (model) => {
-                resultNode.value = JSON.stringify(model)
-            })
-        })()
-    </script>
-
-</body>
+	</body>
 </html>
 
 <!-- BELOW CODE IS CRITICAL. IT HANDLES HOW FORM DATA IS SENT TO OUR SERVER -->
@@ -304,7 +198,7 @@
             timeSlots: $('#result').val().trim()
 		};
 
-		console.log(newReservation);
+		//console.log(newReservation);
 
 		// This line is the magic. It's very similar to the standard ajax function we used.
 		// Essentially we give it a URL, we give it the object we want to send, then we have a "callback".
@@ -313,7 +207,8 @@
 
 		// Here we get the location of the root page.
 		// We use this instead of explicitly saying the URL is localhost:3001 because the url will change when we deploy.
-		var currentURL = window.location.origin;
+		var currentURL = window.location.href;
+        console.log(currentURL)
 
 	    $.post(currentURL + "/api/new", newReservation,
 	    function(data){
